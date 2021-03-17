@@ -7,8 +7,8 @@ BLACK = (0,0,0)
 padWidth = 480
 padHeight = 640
 
-faceImage = ['game-resource/detua.png','game-resource/hong.png','game-resource/wakeup.png']
-explosionSound = ['game-resource/chanho.wav','game-resource/detua.wav']
+faceImage = ['game-resource/detua.png','game-resource/hong.png','game-resource/wakeup.png','game-resource/tiffany.png']
+explosionSound = ['game-resource/chanho.wav','game-resource/detua.wav','game-resource/tiffany.wav']
 
 
 def drawObject(obj,x,y):
@@ -202,7 +202,7 @@ def runGame():
             destroySound = pygame.mixer.Sound(random.choice(explosionSound))
             isShot = False
 
-            faceSpeed += 0.02
+            faceSpeed += 0.1
             if faceSpeed >= 10:
                 faceSpeed = 10
 
